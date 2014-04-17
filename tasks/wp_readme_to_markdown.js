@@ -1,8 +1,9 @@
 /*
- * grunt-wp-readme-to-markdown
- * https://github.com/stephen/wp-readme-to-markdown
+ * wp-readme-to-markdown-with-extra
+ * https://github.com/KingYes/wp-readme-to-markdown-with-extra
  *
  * Copyright (c) 2013 Stephen Harris
+ * Copyright (c) 2014 Yakir Sitbon
  * Licensed under the MIT license.
  */
 
