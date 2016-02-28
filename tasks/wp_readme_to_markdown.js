@@ -47,17 +47,19 @@ module.exports = function(grunt) {
 		}
 		
 		if ( '' !== options.wordpressPluginSlug ) {
+			var wordpressPluginUrl = 'https://wordpress.org/plugins/' + options.wordpressPluginSlug + '/';
+
 			// WordPress Tested Version
-			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/v/' + options.wordpressPluginSlug + '.svg?style=flat-square)]()' );
+			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/v/' + options.wordpressPluginSlug + '.svg?style=flat-square)](' + wordpressPluginUrl + ')' );
 
 			// WordPress Rating
-			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/plugin/r/' + options.wordpressPluginSlug + '.svg?style=flat-square)]()' );
+			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/plugin/r/' + options.wordpressPluginSlug + '.svg?style=flat-square)](' + wordpressPluginUrl + ')' );
 			
 			// WordPress Plugin Version
-			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/plugin/v/' + options.wordpressPluginSlug + '.svg?style=flat-square)]()' );
+			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/plugin/v/' + options.wordpressPluginSlug + '.svg?style=flat-square)](' + wordpressPluginUrl + ')' );
 
 			// WordPress Downloads
-			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/plugin/dt/' + options.wordpressPluginSlug + '.svg?style=flat-square)]()' );
+			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/plugin/dt/' + options.wordpressPluginSlug + '.svg?style=flat-square)](' + wordpressPluginUrl + ')' );
 		}
 		
 		if ( options.gruntIcon ) {
