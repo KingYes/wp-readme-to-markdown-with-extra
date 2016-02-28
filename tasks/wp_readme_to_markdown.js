@@ -1,9 +1,8 @@
 /*
- * wp-readme-to-markdown-with-extra
- * https://github.com/KingYes/wp-readme-to-markdown-with-extra
+ * grunt-wp-readme-to-markdown
+ * https://github.com/stephen/wp-readme-to-markdown
  *
  * Copyright (c) 2013 Stephen Harris
- * Copyright (c) 2014 Yakir Sitbon
  * Licensed under the MIT license.
  */
 
@@ -19,7 +18,8 @@ module.exports = function(grunt) {
 		travisUrlRepo: '',
 		travisBrach: 'master',
 		gruntIcon: true,
-		gruntDependencyStatusUrl: ''
+		gruntDependencyStatusUrl: '',
+	    wordpressPluginSlug: ''
 	});
 	this.files.forEach(function(f) {
 		// Concat specified files.
@@ -44,6 +44,20 @@ module.exports = function(grunt) {
 		
 		if ( '' !== options.gruntDependencyStatusUrl ) {
 			addToHeaderArray.push( '[![Dependency Status](' + options.gruntDependencyStatusUrl + '/dev-status.svg)](' + options.gruntDependencyStatusUrl + '#info=devDependencies)' );		
+		}
+		
+		if ( '' !== options.wordpressPluginSlug ) {
+			// WordPress Tested Version
+			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/v/' + options.wordpressPluginSlug + '.svg?style=flat-square)]()' );
+
+			// WordPress Rating
+			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/plugin/r/' + options.wordpressPluginSlug + '.svg?style=flat-square)]()' );
+			
+			// WordPress Plugin Version
+			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/plugin/v/' + options.wordpressPluginSlug + '.svg?style=flat-square)]()' );
+
+			// WordPress Downloads
+			addToHeaderArray.push( '[![WordPress](https://img.shields.io/wordpress/plugin/dt/' + options.wordpressPluginSlug + '.svg?style=flat-square)]()' );
 		}
 		
 		if ( options.gruntIcon ) {
