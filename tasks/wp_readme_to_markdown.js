@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 		}
 		
 		if ( options.gruntIcon ) {
-			addToHeaderArray.push( '[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)' );
+			addToHeaderArray.push( '[![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com/)' );
 		}
 		
 		var testToHeader = '';
