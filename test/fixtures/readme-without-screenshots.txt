@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: stephenharris
 Donate link: http://example.com/
 Tags: comments, spam
 Requires at least: 3.0.1
@@ -83,7 +83,7 @@ You may provide arbitrary sections, in the same format as the ones above.  This 
 plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
 "installation."  Arbitrary sections will be shown below the built-in sections outlined above.
 
-This is testing handling of semicolons: The first part will be wrapped in asterisks.
+This is testing handling of semicolons: The first part SHOULD NOT be wrapped in asterisks. That should happen in the header section only.
 
 == A brief Markdown Example ==
 

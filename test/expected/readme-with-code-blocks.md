@@ -14,8 +14,20 @@ Here is a short description of the plugin.  This should be no more than 150 char
 
 This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+
+	function test(){
+		$x = "This is a test for block code.";
+		$y = "WordPress uses a bactic above and below the code on its own seperate line.";
+	
+		return '<strong>' . $x . $y . '</strong>';
+	}
+
+
+Here is another code block
+
+	function returnRandomNumber(){
+		return 3;//random number, determined by dice roll.
+	}
 
 A few notes about the sections above:
 
@@ -56,6 +68,18 @@ An answer to that question.
 ### What about foo bar? ###
 
 Answer to foo bar dilemma.
+
+## Screenshots ##
+
+### 1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from ###
+![This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from](http://ps.w.org/plugin-name/assets/screenshot-1.png)
+
+the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
+directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
+(or jpg, jpeg, gif).
+### 2. This is the second screen shot ###
+![This is the second screen shot](http://ps.w.org/plugin-name/assets/screenshot-2.png)
+
 
 ## Changelog ##
 

@@ -57,6 +57,18 @@ An answer to that question.
 
 Answer to foo bar dilemma.
 
+## Screenshots ##
+
+### 1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from ###
+![This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from](http://ps.w.org/plugin-name/assets/screenshot-1.png)
+
+the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
+directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
+(or jpg, jpeg, gif).
+### 2. This is the second screen shot ###
+![This is the second screen shot](http://ps.w.org/plugin-name/assets/screenshot-2.png)
+
+
 ## Changelog ##
 
 ### 1.0 ###
@@ -109,3 +121,7 @@ Markdown uses email style notation for blockquotes and I've been told:
 > Asterisks for *emphasis*. Double it up  for **strong**.
 
 `<?php code(); // goes in backticks ?>`
+
+== My Additional Header ==
+
+Header is not converted as it is added after conversion.
