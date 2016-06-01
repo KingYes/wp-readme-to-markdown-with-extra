@@ -92,14 +92,14 @@ module.exports = function(grunt) {
 		}
 
 		if ( '' !== testToHeader ) {
-			testToHeader = ' ' + testToHeader + '\n\n';
+			testToHeader = testToHeader + '\n\n';
 		}
 
 		//Convert Headings
 		grunt.log.debug("Converting headings");
 		readme = readme.replace( new RegExp( '^=([^=]+)=*?[\\s ]*?$', 'gim' ), '###$1###' );
 		readme = readme.replace( new RegExp( '^==([^=]+)==*?[\\s ]*?$', 'mig' ), '##$1##' );
-		readme = readme.replace( new RegExp( '^===([^=]+)===*?[\\s ]*?$', 'gim' ), '#$1#' + testToHeader );
+		readme = readme.replace( new RegExp( '^===([^=]+)===*?[\\s ]*?$', 'gim' ), '#$1' + testToHeader );
 
 		//parse contributors, donate link, etc.
 		grunt.log.debug("Parse contributors, donate link etc");
