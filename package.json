@@ -1,7 +1,7 @@
 {
   "name": "grunt-wp-readme-to-markdown-with-extra",
   "description": "Converts WP readme.txt file to markdown (readme.md)",
-  "version": "2.1.0",
+  "version": "2.0.0",
   "homepage": "https://github.com/KingYes/wp-readme-to-markdown-with-extra",
   "author": {
     "name": "Stephen Harris",
